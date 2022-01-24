@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* @font-face {
+        font-family: 'Lato';
+        src: url('../src/Lato/Lato-Regular.eot');
+        src: local('Lato Regular'), local('Lato-Regular'),
+            url('../src/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../src/Lato/Lato-Regular.woff') format('woff'),
+            url('../src/Lato/Lato-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    } */
+
+    @font-face {
+        font-family: 'Lato';
+        src: url('../src/Lato/Lato-Medium.eot');
+        src: local('Lato Medium'), local('Lato-Medium'),
+            url('../src/Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../src/Lato/Lato-Medium.woff') format('woff'),
+            url('../src/Lato/Lato-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        src: url('../src/Lato/Lato-Bold.eot');
+        src: local('Lato Bold'), local('Lato-Bold'),
+            url('../src/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../src/Lato/Lato-Bold.woff') format('woff'),
+            url('../src/Lato/Lato-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Stolzl';
+        src: url('Stolzl-Regular.eot');
+        src: local('Stolzl Regular'), local('Stolzl-Regular'),
+            url('../src/font/Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../src/font/Stolzl-Regular.woff2') format('woff2'),
+            url('../src/font/Stolzl-Regular.woff') format('woff'),
+            url('../src/font/Stolzl-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    /* asd */
+      
+      .img {
+        max-width: 100%;
+        display: block;
+      }
+      
+      .figure {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        margin-bottom: 10px;
+        break-inside: avoid;
+      }
+      
+      
+      .figcaption {
+        grid-row: 2;
+        grid-column: 1;
+        background-color: rgba(255,255,255,.5);
+        padding: .2em .5em;
+        justify-self: start;
+      }
+      
+      .container2 {
+        column-count: 4;
+        column-gap: 10px;
+      }
+}
